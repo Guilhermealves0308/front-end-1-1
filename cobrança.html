@@ -31,11 +31,6 @@
                         <i class="fa-solid fa-comments fa-fw"></i>
                         <span>Contatos</span>
                     </a>
-                    <a href="/cobrança.html" title="cobrança">
-                        <i class="fa-solid fa-circle-info fa-fw"></i>
-                        <span>cobrança</span>
-                    </a>
-
                     <div class="dropdown">
                         <button class="dropbtn">Dropdown</button>
                         <div class="dropdown-content">
@@ -63,32 +58,49 @@
                 <main>
 
                     <article>
-                        <form action="action_page.php" method="post">
-                            <div class="imgcontainer">
-                              <img src="/img/EQUIPE_Cyberpunk-removebg-preview.png" class="avatar">
+
+                        <div class="row">
+                            <div class="col-75">
+                                <div class="container">
+                                    <form method="get" action=".">
+                                        <label>Cep:
+                                            <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                                                onblur="pesquisacep(this.value);" /></label><br />
+                                        <label>Rua:
+                                            <input name="rua" type="text" id="rua" size="60" /></label><br />
+                                        <label>Bairro:
+                                            <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+                                        <label>Cidade:
+                                            <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+                                        <label>Estado:
+                                            <input name="uf" type="text" id="uf" size="2" /></label><br />
+                                        
+                                    </form>
+                                </div>
                             </div>
-                          
-                            <div class="container">
-                              <label for="uname"><b>Username</b></label>
-                              <input type="text" placeholder="Enter Username" name="uname" required>
-                          
-                              <label for="psw"><b>Password</b></label>
-                              <input type="password" placeholder="Enter Password" name="psw" required>
-                          
-                              <button type="submit">Login</button>
-                              <label>
-                                <input type="checkbox" checked="checked" name="remember"> Remember me
-                              </label>
+
+                            <div class="col-25">
+                                <div class="container">
+                                    <h4>Cart
+                                        <span class="price" style="color:black">
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <b>4</b>
+                                        </span>
+                                    </h4>
+                                    <p><a href="#"></a> <span class="price"></span></p>
+                                    <p><a href="#"></a> <span class="price"></span></p>
+                                    <p><a href="#"></a> <span class="price"></span></p>
+                                    <p><a href="#"></a> <span class="price"></span></p>
+                                    <hr>
+                                    <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+                                </div>
                             </div>
-                          
-                            <div class="container" style="background-color:#f1f1f1">
-                              <button type="button" class="cancelbtn">Cancel</button>
-                              <span class="psw">Forgot <a href="#">password?</a></span>
-                            </div>
-                          </form>
+                        </div>
                     </article>
 
-                    
+                    <aside>
+                       
+                    </aside>
 
                 </main>
 
@@ -104,5 +116,5 @@
 
 
     </body>
-<script src="scrpit.js"></script>
+
 </html>

@@ -186,11 +186,6 @@ main {
     margin-bottom: 0;
 }
 
-.wrap>main>aside {
-    border-top: 5px dotted orangered;
-    padding: 1rem;
-    background: black;
-}
 
 /* Telas maiores que 768px */
 
